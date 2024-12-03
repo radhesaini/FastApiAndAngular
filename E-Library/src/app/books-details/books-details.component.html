@@ -1,0 +1,28 @@
+<div class="main-container" style="margin: 100px;">
+    <h2 style="background-color: blue; text-align: center; padding: 10px;">To Do App</h2>
+    <div class="add-book-btn-container">
+        <a [routerLink]="['/add-book']" class="add-book-btn" routerLinkActive="active">
+            Add New Book
+        </a>
+    </div>
+    <table class="task-details">
+        <tr class="table-row-heading">
+            <th class="table-heading">Task ID</th>
+            <th class="table-heading">Task Name</th>
+            <th class="table-heading">Actions</th>
+        </tr>
+        <tr class="table-row" *ngFor="let item of books">
+            <td class="table-col-data">{{item.id}}</td>
+            <td class="table-col-data">{{item.task}}</td>
+            <td class="table-col-data">
+                <div class="action-container" >
+                    <button class="task-edit"  [routerLink]="['/edit-book', item.id]">Edit</button>
+          <button class="task-remove" (click)="remove_tasks(item.id)">Delete
+          </button>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<router-outlet></router-outlet>

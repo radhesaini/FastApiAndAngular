@@ -1,0 +1,54 @@
+.task-details{
+    width: 100%;
+    padding: 20px;
+}
+
+.table-row-heading{
+    background-color: pink;
+}
+
+.table-heading, .table-col-data{
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.add-book-btn-container{
+    float: right;
+    margin: 20px 20px 0 0;
+}
+
+.add-book-btn{
+    padding: 12px;
+    font-size: 1.5rem;
+    background-color: greenyellow;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    color: blue;
+    text-decoration: none;
+}
+
+.task-remove{
+    background-color: red;
+
+} 
+
+.task-edit{
+    background-color: aqua;
+}
+
+.action-container{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    button{
+        border: none;
+        border-radius: 2px;
+        cursor: pointer;
+    }
+}
+ 
+.add-book-btn:hover, button:hover{
+    background-color: blue;
+    color: aquamarine;
+}
